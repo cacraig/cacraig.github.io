@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Ngwips - The Next Generation Weather Model Analysis Tool</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Ngwips is an interactive weather model data, and analysis tool. It allows users to overlay weather model maps, and compare any part of a model run in order to determine model trends. "/>
+    <meta name="keywords" content="Weather, Models, Numerical Models, Snowfall, Precipitation, Rain"/>
+
+    <link rel="stylesheet" type="text/css" href="css/ngwips.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/intro.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/font-awesome/font-awesome.min.css"/>
+    
+  </head>
+
+  <body>
+
+<div ui-view=""> 
+<style>.link{fill:none;stroke:black;stroke-width:2px;}p{font-family:'Source Sans Pro',Arial,sans-serif;font-size:1.25em;font-weight:300;color:#666666;text-align:left;}h1{font-size:2.5em;}#about{padding-top:100px;}#about span{color:#e80846;}h1,h2{font-family:'Roboto Slab',Times New Roman,serif;font-weight:300;text-align:left;}.row-pad-top{padding-top:35px;}</style>
+
+<title>Ngwips - The Next Generation Weather Model Analysis Tool</title>
+<meta charset="UTF-8">
+<meta name="description" content="Ngwips is an interactive weather model data, and analysis tool. It allows users to overlay weather model maps, and compare any part of a model run in order to determine model trends. ">
+<meta name="keywords" content="Weather, Models, Numerical Models, Snowfall, Precipitation, Rain, forecast, gfs, nam, ecmwf, ukmet">
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container-fluid header">
+ 
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav" style="color:white;">
+<li>
+<img style="padding-right: 15px;" src="assets/ngwips-xs-shield.png" alt="">
+</li>
+
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+ 
+ 
+</li>
+</ul>
+</div> 
+</div>
+</div>
+<div class="container contents-ngwips-icon">
+<img src="assets/ngwips-medium-beta_c.png" style="display: block;margin-left: auto;margin-right: auto;" alt="">
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-sm-8">
+              <h1 style="text-shadow: 0px;">Basically, Ngwips strives to <br><span>simplify and accelerate forecasting.</span></h1>
+              <p>With Ngwips, forecasters and weather fanatics alike can seamlessly visualize a variety of weather analyses. <br><br>
+              It gives users the ultimate freedom in building, and sharing weather analysis charts. Additionally, users can easily share thier analyses with others. Best of all it's <span>Free!</span>
+              </p>
+              <br><br>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="why-ngwips-is-better">
+  <div class="container contents">
+    <div class="row row-pad-top">
+      <div class="col-md-4 col-md-offset-1">
+        <i class="fa fa-floppy-o fa-2x"> Save analysis to file.</i>
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        <i class="fa fa-share-square-o fa-2x"> Share links to custom analyses.</i>
+      </div>
+    </div>
+    <div class="row row-pad-top">
+      <div class="col-md-4 col-md-offset-1">
+        <i class="fa fa-crosshairs fa-2x"> View NEXRAD radar.</i>
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        <i class="fa fa-code-fork fa-2x"> Compare outputs across models.</i>
+      </div>
+    </div>
+    <div class="row row-pad-top">
+      <div class="col-md-4 col-md-offset-1">
+        <i class="fa fa-globe fa-2x"> View Subregions.</i>
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        <i class="fa fa-cog fa-2x"> Create presets. <span class="coming_soon">(Coming soon)</span></i>
+      </div>
+    </div>
+    <div class="row row-pad-top">
+      <div class="col-md-10 col-md-offset-1">
+        <i class="fa fa-exchange fa-2x"> Compare against previous runs. <span class="coming_soon">(Coming soon)</span></i>
+      </div>
+    </div>
+    <h2 style="padding-top:30px;"> Available Data </h2>
+    <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Models</th>
+              <th>Times</th>
+              <th>Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NAM-4km</td>
+              <td>0-36hr @ 1hr / 36-60hr @ 3hr</td>
+              <td>0z, 6z, 12z, 18z</td>
+            </tr>
+            <tr>
+              <td>NAM</td>
+              <td>0-84hr @ 3hr</td>
+              <td>0z, 6z, 12z, 18z</td>
+            </tr>
+            <tr>
+              <td>GFS 0.5 degree</td>
+              <td>0-120hr @ 3hr / 120-240hr @ 6hr / 240-384hr @ 12hr</td>
+              <td>0z, 6z, 12z, 18z</td>
+            </tr>
+            <tr>
+              <td>ECMWF</td>
+              <td>0-168hr @ 24hr / 168-240hr @ 72hr</td>
+              <td>0z, 6z, 12z, 18z</td>
+            </tr>
+            <tr>
+              <td>HRRR <span class="coming_soon">(Coming Soon)</span></td>
+              <td>0-15hr @ 1hr</td>
+              <td>0z-23z</td>
+            </tr>
+            <tr>
+              <td>RAP <span class="coming_soon">(Coming Soon)</span></td>
+              <td>0-18hr @ 1hr</td>
+              <td>0z-23z</td>
+            </tr>
+            <tr>
+              <td>NAVGEM <span class="coming_soon">(Coming Soon)</span></td>
+              <td>0-15hr @ 1hr</td>
+              <td>0z, 12z</td>
+            </tr>
+            <tr>
+              <td>UKMET <span class="coming_soon">(Coming Soon)</span></td>
+              <td>0-15hr @ 1hr</td>
+              <td>0z, 12z</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+
+    </div>
+
+
+
+</div>
+
+  </body>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61223787-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+</html>
